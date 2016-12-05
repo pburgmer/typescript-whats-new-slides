@@ -1,0 +1,32 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    readonly Properties
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>New keyword <code>readonly</code>
+        <ul>
+          <li>Compiler catches write access</li>
+          <li>Even within nested structures</li>
+        </ul>
+      </li>
+      <li>Pure TypeScript Feature
+        <ul>
+          <li>Does not generate properties with <code>Object.defineProperty</code> and <code>writable: false</code></li>
+          <li>Lightweight alternative to <a href="https://github.com/aearly/icepick" target="_blank">icepick</a> (with is lighter than <a href="https://facebook.github.io/immutable-js/" target="_blank" r>immutable.js</a>)</li>
+          <li>Just check immutability at compile time</li>
+        </ul>
+      </li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+interface DataFromServer {
+  readonly prop1: number;
+  readonly prop2: string;
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

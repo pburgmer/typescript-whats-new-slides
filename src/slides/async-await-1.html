@@ -1,0 +1,28 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    async/await
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Should make async programming easy
+        <ul>
+          <li>Less code nesting, flat code again</li>
+          <li>Readable code!</li>
+        </ul>
+      </li>
+      <li>Didn't make it to ES2016, hopefully 2017</li>
+      <li>Already supported by TypeScript, but only for <code>target: "es6"</code></li>
+      <li>Now supported for ES3 and ES5 also</li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+async function doSomething() {
+  await doSomethingAsync();
+  console.log("finished");
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>
